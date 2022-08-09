@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .mask1 {
+            -webkit-mask-image: url(sample.png);
+            mask-image: url(sample.png);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        }
+        
+        div.text {
+            background-color: aliceblue;
+            height: 50px;
+            width: 600px;
+            transform: width 2s;
+        }
+        
+        div.text:hover {
+            background-color: aliceblue;
+            width: 400px;
+            transform: rotate(30deg);
+        }
+        
+        p {
+            color: red;
+        }
+        
+        p.example {
+            display: inline;
+            font-size: large;
+            transition: color 2s;
+        }
+        
+        p.example:hover {
+            color: darkgreen;
+            font-size: larger;
+        }
+        
+        img#image {
+            position: relative;
+            top: -100px;
+            z-index: -1;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The mask-image Property</h1>
+
+    <h3>An image with a mask layer image:</h3>
+    <div class="mask1">
+        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </div>
+
+    <h2>display: inline</h2>
+    <div>
+        <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+            <p class="example">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+
+        </div>
+        <img id="image" src="img_5terre.jpg" alt="Cinque Terre" width="300" height="200">
+    </div>
+
+</body>
+
+</html>

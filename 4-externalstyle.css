@@ -1,0 +1,22 @@
+body {
+    color: rgb(9, 241, 51);
+    background-color: rgb(240, 230, 218);
+}
+
+h1 {
+    text-decoration: underline;
+    text-decoration-color: rgb(122, 237, 122);
+    text-transform: capitalize;
+    text-shadow: 2px 3px 3px rgb(82, 75, 75);
+    text-decoration-style: dotted;
+    text-align: center;
+    border-radius: 10px 5px 10px;
+}
+
+p {
+    text-align: justify;
+    padding-right: 15px;
+    font-variant: small-caps;
+    font-size: 2em;
+    color: rgb(0, 200, 255);
+}
